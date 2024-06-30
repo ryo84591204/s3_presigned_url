@@ -1,0 +1,26 @@
+{
+  "name": "s3_presigned_url-cdk-auto-synth",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:dev-22-bookworm",
+  "onCreateCommand": "npm i -g nodemon",
+  "postAttachCommand": "npm run auto-synth",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "AmazonWebServices.aws-toolkit-vscode",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ],
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.fixAll": "always",
+          "source.organizeImports": "always"
+        }
+      }
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/aws-cdk:2": {}
+  }
+}
